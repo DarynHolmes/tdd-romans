@@ -5,24 +5,13 @@ const romanToDecimal = require("./romanNumerals");
 // refactor - remove duplication
 
 it("should convert I to 1", () => {
-  // given, when, then
-  const expected = 1;
-  //given - inputs
-  const input = "I";
-  // when - system under test (function we testing)
-  const actual = romanToDecimal(input);
-  // then - assertions
-  expect(actual).toBe(expected);
+  expect(romanToDecimal("I")).toBe(1);
 });
 
 it("should convert II to 2", () => {
-  // given, when, then
   const expected = 2;
-  //given - inputs
   const input = "II";
-  // when - system under test (function we testing)
   const actual = romanToDecimal(input);
-  // then - assertions
   expect(actual).toBe(expected);
 });
 
